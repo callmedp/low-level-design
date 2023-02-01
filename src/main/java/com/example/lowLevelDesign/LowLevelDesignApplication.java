@@ -1,9 +1,6 @@
 package com.example.lowLevelDesign;
 
-import com.example.designPatterns.Adapter;
-import com.example.designPatterns.Builder;
-import com.example.designPatterns.Factory;
-import com.example.designPatterns.Singleton;
+import com.example.designPatterns.*;
 import org.json.JSONException;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -39,6 +36,11 @@ public class LowLevelDesignApplication {
 
 		Adapter adapter = new Adapter();
 		adapter.clientAdapter();
+
+		//********************* Bridge Pattern *************
+
+		Bridge bridge = new Bridge();
+		bridge.createBridge();
 	}
 
 }
